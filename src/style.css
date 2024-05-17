@@ -9,7 +9,12 @@ html {
 }
 
 .container {
-  width: 720px;
+  width: 500px;
   margin-right: auto;
   margin-left: auto;
+  display : flexbox;
+}
+
+h1 {
+  text-size-adjust: 10px;
 }

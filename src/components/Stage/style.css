@@ -1,9 +1,12 @@
 .stage {
   height: 340px;
-  padding: 32px;
-  margin: 32px auto;
+  padding: 10px;
+  margin: 10px auto;
   background-color: #efefef;
   border-radius: 8px;
+  display: inline-table;
+  border: 3px solid black;
+
 }
 
 .stage__mistakes {
@@ -11,9 +14,65 @@
   margin-bottom: 64px;
 }
 
-.stage__words {
+.stage__words, .butony {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
+}
+
+.butony {
+  height: 30px;
+  margin: 15px auto;
+  display: contents;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  overflow: visible; /* zajistí, že obsah bude viditelný */
+  visibility: visible;
+  border: 1px solid white;
+}
+
+.ikonka {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+
+  padding: 0; /* nebo jiné okraje */
+  overflow: visible; /* zajistí, že obsah bude viditelný */
+  visibility: visible;
+}
+.table-up {
+  border: 0px solid black;
+  padding: 10px;
+  column-gap: 10px;
+  border-bottom-color: blue;
+  columns: 10;
+  column-count: auto;
+}
+td, tr {
+  /*display: inline-table; */
+  border: 0px solid #ddd;
+  padding: 10x;
+  text-align: center;
+  justify-content: center;
+}
+
+.sticky-column {
+  position: sticky;
+  left: 0; /* Pevně daný sloupec bude zarovnán vlevo */
+  z-index: 1; /* Zajištění, aby byl sloupec nad ostatními buňkami */
+  background-color: aqua; /* Možné nastavit barvu pozadí pro výraznější oddělení */
+}
+
+.spacer {
+  min-width: 20px; /* Minimální šířka mezerového prvku */
+  display: table-cell;
+}
+
+.button {
+  min-width: 30px;
+  height: 30px;
+  border: none;
+  cursor: pointer;
 }
