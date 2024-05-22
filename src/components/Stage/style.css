@@ -30,7 +30,7 @@
   align-items: center;
   overflow: visible; /* zajistí, že obsah bude viditelný */
   visibility: visible;
-  border: 1px solid white;
+  border: 0px solid white;
 }
 
 .ikonka {
@@ -42,20 +42,28 @@
   overflow: visible; /* zajistí, že obsah bude viditelný */
   visibility: visible;
 }
+
+.no-wrap {
+  white-space: nowrap;
+}
+
 .table-up {
   border: 0px solid black;
   padding: 10px;
   column-gap: 10px;
-  border-bottom-color: blue;
-  columns: 10;
-  column-count: auto;
+  columns: auto;
+  column-count: 10;
+  justify-content: center;
 }
+
 td, tr {
   /*display: inline-table; */
   border: 0px solid #ddd;
   padding: 10x;
   text-align: center;
   justify-content: center;
+  font-size: 12px;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .sticky-column {

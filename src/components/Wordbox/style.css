@@ -21,3 +21,7 @@
 .wordbox--inactive {
   background-color: #969292;
 }
+
+h1 {
+  font-size: large;
+}
